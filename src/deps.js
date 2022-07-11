@@ -1,0 +1,5 @@
+export * as umzug from 'umzug'
+export * as lodash from 'lodash'
+export * as mariadb from 'mariadb'
+export * as sequelize from 'sequelize'
+export * as sourceMapSupport from 'source-map-support'

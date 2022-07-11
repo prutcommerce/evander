@@ -1,0 +1,10 @@
+{
+  "environment": "local",
+  "database": {
+    "host": "mariadb",
+    "port": "3306",
+    "name": "evander_local",
+    "username": "root",
+    "password": "admin"
+  }
+}

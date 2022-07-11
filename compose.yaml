@@ -1,0 +1,24 @@
+networks:
+  artemis_prutcommerce:
+    external: true
+
+services:
+  evander:
+    image: 'node:18.4'
+    container_name: evander.dev
+    working_dir: /srv/evander
+    command: 'yarn dev'
+    ports:
+      - "5150:5150"
+    volumes:
+      - .:/srv/evander
+    networks:
+      - artemis_prutcommerce
+
+  deps:
+    image: 'node:18.4'
+    container_name: evander.deps
+    working_dir: /srv/evander
+    volumes:
+      - .:/srv/evander
+    command: 'yarn install'

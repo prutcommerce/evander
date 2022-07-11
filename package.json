@@ -1,0 +1,45 @@
+{
+  "name": "evander",
+  "version": "1.0.0",
+  "main": ".dist/index.js",
+  "author": "radu <radu.buciuceanu@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn dev:transpile:once && concurrently \"yarn dev:transpile\" \"yarn dev:server\"",
+    "dev:server": "nodemon -w .dist -e js,proto,json,cypher,graphql .dist/main.js",
+    "dev:transpile": "webpack -c .pack/config.dev.js",
+    "dev:transpile:once": "webpack -c .pack/config.dev.js --no-watch",
+    "db:migrate:create": "yarn run evander.create.migration create --skip-verify --prefix TIMESTAMP --name",
+    "db:seed:create": "yarn run evander.create.seed create --skip-verify --prefix TIMESTAMP --name"
+  },
+  "bin": {
+    "evander.create.migration": "bin/create-migration.js",
+    "evander.create.seed": "bin/create-seed.js"
+  },
+  "dependencies": {
+    "axios": "0.27.2",
+    "express": "4.18.1",
+    "graphql": "16.5.0",
+    "kafkajs": "1.16.0",
+    "lodash": "4.17.21",
+    "mariadb": "3.0.0",
+    "rxjs": "7.5.5",
+    "sequelize": "6.19.0",
+    "umzug": "3.1.1",
+    "yup": "0.32.11"
+  },
+  "devDependencies": {
+    "@swc/core": "1.2.179",
+    "concurrently": "7.1.0",
+    "copy-webpack-plugin": "10.2.4",
+    "nodemon": "2.0.16",
+    "raw-loader": "4.0.2",
+    "regenerator-runtime": "0.13.9",
+    "source-map-support": "0.5.21",
+    "swc-loader": "0.2.0",
+    "webpack": "5.72.0",
+    "webpack-cli": "4.9.2",
+    "webpack-merge": "5.8.0"
+  },
+  "packageManager": "yarn@3.2.1"
+}
