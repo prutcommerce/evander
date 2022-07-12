@@ -8,3 +8,5 @@ export * as express from 'express'
 export * as sequelize from 'sequelize'
 export * as expressGraphql from 'express-graphql'
 export * as sourceMapSupport from 'source-map-support'
+
+export { default as axios } from 'axios'

@@ -6,5 +6,9 @@
     "name": "evander_local",
     "username": "root",
     "password": "admin"
+  },
+  "connect": {
+    "host": "http://connect",
+    "port": "8083"
   }
 }
