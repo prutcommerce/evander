@@ -1698,7 +1698,7 @@ __metadata:
     kafkajs: 1.16.0
     lodash: 4.17.21
     mariadb: 3.0.0
-    nephele: "git+ssh://git@github.com/prutcommerce/nephele.git#0.1.0"
+    nephele: "git+ssh://git@github.com/prutcommerce/nephele.git#0.1.1"
     nodemon: 2.0.16
     raw-loader: 4.0.2
     regenerator-runtime: 0.13.9
@@ -1710,9 +1710,6 @@ __metadata:
     webpack-cli: 4.9.2
     webpack-merge: 5.8.0
     yup: 0.32.11
-  bin:
-    evander.create.migration: bin/create-migration.js
-    evander.create.seed: bin/create-seed.js
   languageName: unknown
   linkType: soft
 
@@ -3023,9 +3020,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nephele@git+ssh://git@github.com/prutcommerce/nephele.git#0.1.0":
+"nephele@git+ssh://git@github.com/prutcommerce/nephele.git#0.1.1":
   version: 1.0.0
-  resolution: "nephele@git+ssh://git@github.com/prutcommerce/nephele.git#commit=9142f8f834d8b77e0ee55d94746ef48af5b30ce8"
+  resolution: "nephele@git+ssh://git@github.com/prutcommerce/nephele.git#commit=53c71114d3b42c80a11ce031e4e9e142e74f1a70"
   dependencies:
     "@swc/core": 1.2.179
     axios: 0.27.2
@@ -3052,9 +3049,9 @@ __metadata:
     sequelize: 6.19.0
     yup: 0.32.11
   bin:
-    pluto.create.migration: bin/create-migration.js
-    pluto.create.seed: bin/create-seed.js
-  checksum: b043b1ef0797ce032e47485b3df6afbb1dbf584204559371ed3b8d0e6e0e0153dd5d6930ff33f1d9425e6a497d3a8c484a052ae9166fc34bfd7a1c0e18770587
+    nephele.create.migration: bin/create-migration.js
+    nephele.create.seed: bin/create-seed.js
+  checksum: 72baf8474425ee54547679f9446dcfd1ed549198f9ee480720fd10b3def1e99641f4c3ed7707676753b53205f4e179dbfa76b9a86bb9d044c27899eae78bbb2b
   languageName: node
   linkType: hard
 

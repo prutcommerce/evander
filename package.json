@@ -9,12 +9,8 @@
     "dev:server": "nodemon -w .dist -e js,proto,json,cypher,graphql .dist/main.js",
     "dev:transpile": "webpack -c .pack/config.dev.js",
     "dev:transpile:once": "webpack -c .pack/config.dev.js --no-watch",
-    "db:migrate:create": "yarn run evander.create.migration create --skip-verify --prefix TIMESTAMP --name",
-    "db:seed:create": "yarn run evander.create.seed create --skip-verify --prefix TIMESTAMP --name"
-  },
-  "bin": {
-    "evander.create.migration": "bin/create-migration.js",
-    "evander.create.seed": "bin/create-seed.js"
+    "db:migrate:create": "yarn run nephele.create.migration create --skip-verify --prefix TIMESTAMP --name",
+    "db:seed:create": "yarn run nephele.create.seed create --skip-verify --prefix TIMESTAMP --name"
   },
   "dependencies": {
     "axios": "0.27.2",
@@ -23,7 +19,7 @@
     "kafkajs": "1.16.0",
     "lodash": "4.17.21",
     "mariadb": "3.0.0",
-    "nephele": "git+ssh://git@github.com/prutcommerce/nephele.git#0.1.0",
+    "nephele": "git+ssh://git@github.com/prutcommerce/nephele.git#0.1.1",
     "rxjs": "7.5.5",
     "sequelize": "6.19.0",
     "yup": "0.32.11"
