@@ -1,0 +1,4 @@
+type PaymentConnection implements Connection {
+    edges:[PaymentEdge!]!
+    pageInfo: PageInfo!
+}

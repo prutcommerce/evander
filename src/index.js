@@ -3,12 +3,14 @@ import { seedDb } from 'src/seed-db'
 import { nephele, yup } from 'src/deps'
 import { migrateDb } from 'src/migrate-db'
 import { setupServer } from 'src/setup-server'
+import { getPayments } from 'src/get-payments'
 import { setupConnect } from 'src/setup-connect'
 
 export const evander = {
   core,
   seedDb,
   migrateDb,
+  getPayments,
 }
 
 nephele.setupLogger()

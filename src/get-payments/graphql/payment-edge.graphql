@@ -1,0 +1,4 @@
+type PaymentEdge implements Edge {
+    node: Payment!
+    cursor: ID!
+}

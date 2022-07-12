@@ -9,7 +9,7 @@ services:
     working_dir: /srv/evander
     command: 'yarn dev'
     ports:
-      - "5150:5150"
+      - "5100:5100"
     volumes:
       - .:/srv/evander
     networks:

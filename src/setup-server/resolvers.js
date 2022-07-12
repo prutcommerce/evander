@@ -1,5 +1,7 @@
+import { evander } from 'src'
+
 const make = () => ({
-  foo: '',
+  payments: evander.getPayments.resolver,
   bar: '',
 })
 
