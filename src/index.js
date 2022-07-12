@@ -5,12 +5,14 @@ import { migrateDb } from 'src/migrate-db'
 import { setupServer } from 'src/setup-server'
 import { getPayments } from 'src/get-payments'
 import { setupConnect } from 'src/setup-connect'
+import { createPayment } from 'src/create-payment'
 
 export const evander = {
   core,
   seedDb,
   migrateDb,
   getPayments,
+  createPayment,
 }
 
 nephele.setupLogger()

@@ -1,0 +1,7 @@
+input CreatePayment {
+    orderId: ID!
+    cardNumber: String!
+    cardCvv: String!
+    cardExpiryYear: Int!
+    cardExpiryMonth: Int!
+}

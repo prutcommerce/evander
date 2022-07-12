@@ -2,7 +2,7 @@ import { evander } from 'src'
 
 const make = () => ({
   payments: evander.getPayments.resolver,
-  bar: '',
+  createPayment: evander.createPayment.resolver,
 })
 
 export const resolvers = { make }
