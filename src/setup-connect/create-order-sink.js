@@ -8,7 +8,7 @@ const makeConfig = () => ({
   'connection.url': connectionUrl(),
   'connection.user': evander.core.settings.getDatabaseUsername(),
   'connection.password': evander.core.settings.getDatabasePassword(),
-  'topics': 'prutcommerce_product',
+  'topics': 'prutcommerce_order',
   'auto.create': false,
   'pk.fields': 'id',
   'pk.mode': 'record_value',
@@ -17,13 +17,13 @@ const makeConfig = () => ({
   'value.converter': 'org.apache.kafka.connect.json.JsonConverter',
   'key.converter.schemas.enable': false,
   'value.converter.schemas.enable': true,
-  'table.name.format': 'product',
+  'table.name.format': 'order',
   'insert.mode': 'upsert'
 })
 
-export const createProductSink = async () => {
+export const createOrderSink = async () => {
   const params = {
-    name: 'evander_product_sink',
+    name: 'evander_order_sink',
     config: makeConfig(),
     baseUrl: evander.core.settings.getConnectUrl(),
   }
