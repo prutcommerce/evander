@@ -19,7 +19,7 @@
     "kafkajs": "1.16.0",
     "lodash": "4.17.21",
     "mariadb": "3.0.0",
-    "nephele": "git+ssh://git@github.com/prutcommerce/nephele.git#0.1.2",
+    "nephele": "git+ssh://git@github.com/prutcommerce/nephele.git#0.1.3",
     "rxjs": "7.5.5",
     "sequelize": "6.19.0",
     "yup": "0.32.11"
